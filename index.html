@@ -2,25 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href="main.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<title>Mortgage Calculator</title>
 </head>
 <body>
-	<div>
+	<div class="container-fluid">
 		<header>
-			<h1>jQuery Mortgage Calculator</h1>
+			<div class="row">
+				<div class="col-md-8">
+					<h1>jQuery Mortgage Calculator</h1>
+				</div>
+			</div>
 		</header>
-		
-			<label>Loan Balance</label>
-			<input type="number" id="loan">
-			<label>Interest Rate (%)</label>
-			<input id="rate">
-			<label>Loan Term (years)</label>
-			<input type="number" id="term">
-			<label>Period</label>
-			<select name="" id=""></select>
-			<button>Calculate</button>
-			<p></p>
+		<form class="form-horizontal">
+			<div class="form-group">
+    			<label for="loan" class="col-sm-2 control-label">Loan Balance</label>
+    			<div class="col-sm-10">
+      				<input type="" class="form-control" id="loan" placeholder="">
+    			</div>
+  			</div>
+			<div class="form-group">
+    			<label for="rate" class="col-sm-2 control-label">Interest Rate (%)</label>
+    			<div class="col-sm-10">
+      				<input type="" class="form-control" id="rate" placeholder="">
+    			</div>
+  			</div>
+			<div class="form-group">
+    			<label for="term" class="col-sm-2 control-label">Loan Term (years)</label>
+    			<div class="col-sm-10">
+      				<input type="" class="form-control" id="term" placeholder="">
+    			</div>
+  			</div>
+			<div class="form-group">
+    			<label for="period" class="col-sm-2 control-label">Period</label>
+    			<div class="col-sm-10">
+      				<select type="" class="form-control" id="period" placeholder=""></select>
+    			</div>
+  			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<button type="button" class="btn btn-primary">Calculate</button>
+				</div>
+			</div>
+		</form>
+		<p></p>
 	</div>
 	<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
 	<script src="index.js"></script>	
